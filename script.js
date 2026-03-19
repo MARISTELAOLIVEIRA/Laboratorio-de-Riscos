@@ -472,7 +472,7 @@ function generatePDF() {
   const pdfContent = `
     <div style="padding: 40px; font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;">
       <div style="text-align: center; margin-bottom: 40px; border-bottom: 3px solid #22c55e; padding-bottom: 20px;">
-        <h1 style="color: #0b1220; margin: 0; font-size: 28px;">🛡️ LojaTech</h1>
+        <h1 style="color: #0b1220; margin: 0; font-size: 28px;">💻 LojaTech</h1>
         <h2 style="color: #374151; margin: 10px 0; font-size: 20px;">Laboratório Avançado de Riscos</h2>
         <p style="color: #6b7280; font-size: 14px; margin: 5px 0;">Certificado de Conclusão</p>
       </div>
