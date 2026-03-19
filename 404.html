@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Página não encontrada | LojaTech</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0b1220 0%, #1a2942 100%);
+      color: #e6eef8;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .error-container {
+      text-align: center;
+      max-width: 600px;
+      background: #111a2c;
+      border: 1px solid #223557;
+      border-radius: 20px;
+      padding: 50px 40px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .error-icon {
+      font-size: 120px;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    h1 {
+      font-size: 72px;
+      color: #7dd3fc;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #f0f9ff;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #a5b4cc;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .btn-home {
+      display: inline-block;
+      background: #22c55e;
+      color: #08110a;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+    }
+
+    .btn-home:hover {
+      background: #16a34a;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+    }
+
+    .logo {
+      color: #7dd3fc;
+      font-size: 18px;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    .divider {
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #38bdf8, #22c55e);
+      margin: 20px auto;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 600px) {
+      .error-container {
+        padding: 40px 25px;
+      }
+
+      h1 {
+        font-size: 56px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      .error-icon {
+        font-size: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <div class="logo">🛡️ LojaTech</div>
+    <div class="divider"></div>
+    <div class="error-icon">🔍</div>
+    <h1>404</h1>
+    <h2>Página não encontrada</h2>
+    <p>
+      Ops! Parece que você tentou acessar uma área que não existe no nosso Laboratório de Riscos. 
+      A página que você procura pode ter sido movida, renomeada ou nunca existiu.
+    </p>
+    <a href="index.html" class="btn-home">🏠 Voltar para o início</a>
+  </div>
+</body>
+</html>

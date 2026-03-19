@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LojaTech – Laboratório de Riscos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <h1>🛡️ LojaTech – Laboratório de Riscos</h1>
+        <p class="subtitle">Missões individuais • análise crítica • continuidade de negócios</p>
+      </div>
+      <div class="status-panel">
+        <div class="pill">Missão <span id="missionNum">1</span>/5</div>
+        <div class="pill">Pontuação <span id="score">0</span></div>
+        <div class="pill">Tempo <span id="timer">00:00</span></div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card main-card">
+        <div id="introScreen">
+          <h2>Contexto</h2>
+          <p>Você foi contratado como <strong>Analista de Segurança da Informação</strong> da <strong>LojaTech</strong>, um e-commerce com operação nacional. Sua missão é investigar cenários críticos, comparar riscos, priorizar ativos e decidir medidas de continuidade de negócios.</p>
+          <div class="highlight">
+            <strong>Objetivo:</strong> concluir 5 missões. Algumas respostas exigem comparação, priorização e raciocínio de gestão, não apenas memorização.
+          </div>
+          <label>Seu nome</label>
+          <input id="studentName" type="text" placeholder="Digite seu nome">
+          <button id="startBtn" class="primary">Iniciar missão</button>
+        </div>
+
+        <div id="missionScreen" class="hidden">
+          <div class="mission-head">
+            <h2 id="missionTitle"></h2>
+            <p id="missionDesc" class="mission-desc"></p>
+          </div>
+          <div id="missionContent"></div>
+          <div class="actions">
+            <button id="submitBtn" class="primary">Enviar resposta</button>
+          </div>
+          <div id="feedback" class="feedback hidden"></div>
+        </div>
+
+        <div id="finalScreen" class="hidden">
+          <h2>🏁 Missão concluída</h2>
+          <div id="finalSummary" class="highlight"></div>
+          <div class="actions">
+            <button id="downloadPdfBtn" class="primary pdf-btn">📄 Baixar certificado em PDF</button>
+            <button id="restartBtn" class="primary">Jogar novamente</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="card side-card">
+        <h3>Ativos da LojaTech</h3>
+        <ul class="asset-list">
+          <li>Banco de dados de clientes</li>
+          <li>Sistema de vendas online</li>
+          <li>Gateway de pagamento</li>
+          <li>ERP / sistema financeiro</li>
+          <li>Backups</li>
+          <li>Servidor de e-mail</li>
+          <li>Rede corporativa</li>
+          <li>Equipe de atendimento</li>
+        </ul>
+
+        <h3>Critérios</h3>
+        <ul class="criteria-list">
+          <li><strong>Criticidade:</strong> quanto o negócio depende do ativo</li>
+          <li><strong>Probabilidade:</strong> chance de o evento acontecer</li>
+          <li><strong>Impacto:</strong> dano operacional, financeiro, legal ou reputacional</li>
+          <li><strong>Prioridade:</strong> risco mais urgente para tratamento</li>
+        </ul>
+
+        <h3>Log das missões</h3>
+        <div id="logBox" class="log-box"></div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
